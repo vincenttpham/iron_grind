@@ -1,0 +1,401 @@
+body{
+  /*
+  font-family:'Open-sans', sans-serif;
+  font-size:17px;
+  */
+  line-height:1.5em;
+  margin:0;
+  padding:0;
+
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  background-color: #eaeaea;
+}
+
+img{
+  width:100%;
+}
+
+.container{
+  margin:auto;
+}
+
+/* COMMON CLASSES */
+.primary-text{
+  color:#af9250;
+}
+
+.primary-background{
+  background:#af9250;
+}
+
+.secondary-text{
+  color: #fff;
+}
+
+/* HEADER */
+#main-header{
+  background-color: #fff;
+  position: fixed;
+  width:100%;
+}
+
+#main-header h1{
+  position: absolute;
+  top: -16px;
+  text-align: right;
+}
+
+#subheader{
+  padding-top: 65px;
+}
+
+/* NAVBAR */
+#navbar{
+  text-transform:uppercase;
+  line-height: 33px;
+}
+
+#navbar li{
+  display:inline;
+  margin-left:20px;
+  list-style:none;
+}
+
+#navbar a{
+  text-decoration:none;
+  color:#af9250;
+}
+
+#navbar li.current a, #navbar a:hover{
+  color:#af9250;
+  border-bottom: 2px solid #242423;
+  padding-bottom:3px;
+}
+
+/* SHOWCASE */
+#showcase{
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/showcase.jpg') no-repeat center center;
+  border-bottom:1px solid #af9250;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 65px;
+}
+
+#showcase .row{
+  height:600px;
+}
+
+#showcase h1{
+  font-size:70px;
+  margin:0;
+  padding-bottom:30px;
+}
+
+#showcase p{
+  color:#e2e2e2;
+  margin:0;
+  font-family:monospace;
+  font-size: 25px;
+}
+
+#showcase .showcase-content{
+  /* background:#535046; */
+  color:#fff;
+  padding:40px;
+}
+
+/* AMENITIES */
+/* -- FEATURES -- */ 
+#features {
+  background:linear-gradient(rgba(255, 255, 255, 1), rgba(18, 18, 0, 0.5)), url('../images/amenities-bg.jpg') no-repeat center center;
+  background-size:cover;
+  padding-top: 20px;
+}
+
+#features h2{
+  font-size:35px;
+  margin:0;
+  padding-bottom:10px;
+    color: #d9bc78;
+}
+
+#features h4{
+    color: #ffffff;
+    padding-bottom: -10px;
+}
+
+#features p{
+  color:#ebebeb;
+  margin-bottom:21px;
+}
+
+#features .fa{
+  font-size:60px;
+  color:#d9bc78;
+}
+
+/* INFO */
+/* linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
+#info{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/info-bg.jpg') no-repeat center center; 
+  background-attachment: fixed;
+  background-size: cover;
+  color:#fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#info h2{
+  font-size:35px;
+  margin:0;
+  padding-bottom:10px;
+}
+
+#info ul{
+  list-style:none;
+  padding:0;
+}
+
+#info li{
+  line-height:2em;
+  font-size:20px;
+  text-align: left;
+}
+
+/* COMPANY */
+#company{
+  background:#333;
+  color:#fff;
+  padding:10px;
+}
+
+#company h4{
+  text-transform:uppercase;
+  margin-bottom:0;
+    color: #af9250;
+}
+
+#company ul{
+  padding:0;
+  list-style:none;
+  line-height:2em;
+}
+
+#company ul li{
+    padding-left: 10px;
+}
+
+#company input[type="text"]{
+  padding:7px;
+}
+
+#company button{
+  background:#222;
+  color:#fff;
+  padding:10px;
+  border:0;
+}
+
+/* FOOTER */
+#main-footer{
+  background:#af9250;
+  color:#fff;
+}
+
+/* PAGE */
+#page{
+  margin-bottom:40px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+/* SERVICES */
+.memberships{
+    display: flex;
+    justify-content: center;
+}
+
+.memberships div{
+    margin: 0px 20px 0px 20px;
+    border-radius: 15px;
+}
+
+.memberships div:nth-child(1){
+    background: linear-gradient(to right, #434343, #a88127);
+}
+
+.memberships div:nth-child(2){
+    background: linear-gradient(to right, #a88127, #fcde99);
+}
+
+.memberships div:nth-child(3){
+    background: linear-gradient(to right, #fcde99, #bcbcbc);
+}
+
+.services .container h2{
+    text-align: center;
+}
+
+.memberships h3{
+    font-size: 50px;
+    text-align: center;
+}
+
+.memberships p{
+  font-size: 80px;
+    text-align: center;
+    color: #fff;
+}
+
+.memberships a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.memberships a:hover{
+  color: #af9250;
+}
+
+.memberships div span{
+    font-size: 50%;
+}
+
+/* CONTACT */
+.contact form{
+  color:#fff;
+  padding:20px;
+}
+
+.contact form input[type="text"]{
+  width:50%;
+  height:30px;
+  margin-bottom:10px;
+}
+
+.contact form textarea{
+  width:50%;
+  height:100px;
+}
+
+.contact form button{
+  width:50%;
+  padding:10px 0;
+  border:0;
+  background:#222;
+  color:#fff;
+}
+
+.contact form label{
+  text-transform:uppercase;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:1024px){
+  #navbar li{
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  #page .memberships h3, #page .memberships p{
+    font-size: 300%;
+  }
+  .memberships div{
+    width: 200px;
+    margin: 0px 10px 0px 10px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  #navbar li{
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  #showcase h1{
+    font-size:50px;
+  }
+  #showcase p{
+    font-size: 20px;
+  }
+  #page .memberships h3, #page .memberships p{
+    font-size: 200%;
+  }
+  .memberships div{
+    width: 200px;
+    margin: 0px 5px 0px 5px;
+  }
+}
+
+@media only screen and (max-width:480px){
+  #showcase, #features, #info, #page{
+    background-attachment: scroll;
+  }
+  #main-header h1{
+    font-size: 30px;
+  }
+  #navbar li{
+    font-size: 12px;
+    margin-left:8px;
+  }
+  #showcase h1{
+    font-size:40px;
+  }
+  #showcase p, #info h2{
+    font-size: 16px;
+  }
+  #page .memberships{
+    display: initial;
+  }
+  #page .memberships h3, #page .memberships p{
+    font-size: 180%;
+  }
+  .memberships div{
+    width: 200px;
+    margin: 5px 0px 5px 0px;
+  }
+}
+
+/* ---- NEW PAGE ---- */
+
+/* OUR MISSION */
+
+.about{
+    background:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('../images/hands.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.about h2{
+    text-align: center;
+}
+
+.about p{
+    padding: 40px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: -30px;
+}
+    
+.services{
+    background: linear-gradient(rgba(131, 109, 36, 0.7), rgba(0, 0, 0, 0.1)), url('../images/whoweare.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* CONTACT */
+
+.contact{
+    background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/kettlebell.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact p{
+    font-size: 30px;
+    color: #fff;
+}
